@@ -1,4 +1,6 @@
-const characters = [{
+"use strict";
+
+var characters = [{
   name: 'мечник',
   health: 10
 }, {
@@ -11,4 +13,6 @@ const characters = [{
   name: 'лучник',
   health: 0
 }];
-const alive = characters.filter(item => item.health > 0);
+var alive = characters.filter(function (item) {
+  return item.health > 0;
+});
